@@ -58,6 +58,12 @@ async function createWindow() {
         // const iconPath = path.join(__dirname + '/icons/logo.png');
         tray = new Tray(path.join(__static, 'icon.png'))
         const contextMenu = Menu.buildFromTemplate([{
+                label: 'Dashboard METAS',
+                click() {
+                    win.show();
+                }
+            },
+            {
                 label: "Abrir com o Login",
                 type: 'checkbox',
                 checked: getOpenAtLogin(),
@@ -82,6 +88,16 @@ async function createWindow() {
         tray.setContextMenu(contextMenu)
     })
 
+    //Teste aqui
+    win.on('close', function(event) {
+        if (app.quitting) {
+            win = null
+        } else {
+            event.preventDefault()
+            win.hide()
+        }
+    });
+    //
 
     // Salva as configurações de tela
     mainWindowState.manage(win);
