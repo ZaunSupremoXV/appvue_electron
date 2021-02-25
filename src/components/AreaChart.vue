@@ -28,13 +28,13 @@ export default {
     this.renderChart(
       {
         labels: [
-          "January",
-          "February",
-          "March",
-          "April",
-          "May",
-          "June",
-          "July"
+          "Janeiro",
+          "Fevereiro",
+          "Março",
+          "Abril",
+          "Maio",
+          "Junho",
+          "Julho"
         ],
         datasets: [
           {

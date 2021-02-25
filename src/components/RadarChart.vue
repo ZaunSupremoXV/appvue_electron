@@ -7,13 +7,13 @@ export default {
     this.renderChart(
       {
         labels: [
-          "Eating",
-          "Drinking",
-          "Sleeping",
-          "Designing",
-          "Coding",
-          "Cycling",
-          "Running"
+          "Comendo",
+          "Bebendo",
+          "Dormindo",
+          "Projetando",
+          "Codificação",
+          "Ciclismo",
+          "Correndo"
         ],
         datasets: [
           {
